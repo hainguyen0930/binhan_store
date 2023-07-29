@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>An Bình store</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=REM:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/logo.png">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-3.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header">
+
+    <div class="alert">
+      <div class="container">
+        <p class="alert-text">Các sản phẩm uy tín, chất lượng, giá cả cạnh tranh</p>
+      </div>
+    </div>
+
+    <div class="header-top" data-header>
+      <div class="container">
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        <div class="input-wrapper">
+          <input type="search" name="search" placeholder="Search product" class="search-field" id="search-field">
+        
+          <button class="search-submit" aria-label="search" onclick="searchText()">
+            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+        
+
+        <a  class="logo">
+          <img src="./assets/images/logo.png" width="179" height="26" alt="Glowing">
+        </a>
+
+        
+        <nav class="navbar">
+            <ul class="navbar-list">
+  
+              <li>
+                <a href="index.html" class="navbar-link has-after">Trang chủ</a>
+              </li>
+  
+              <li>
+                <a href="#collection" class="navbar-link has-after">Bộ sưu tập</a>
+              </li>
+  
+              <li>
+                <a href="my_pham.html" class="navbar-link has-after">Chăm sóc sắc đẹp</a>
+              </li>
+  
+              <li>
+                <a href="do_gia_dung.html" class="navbar-link has-after">Đồ gia dụng</a>
+              </li>
+  
+              <li>
+                <a href="thuc_pham.html" class="navbar-link has-after">Thực phẩm chức năng</a>
+              </li>
+  
+              <li>
+                <a href="#blog" class="navbar-link has-after">Blog</a>
+              </li>
+  
+            </ul>
+          </nav>
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <!-- 
+    - #MOBILE NAVBAR
+  -->
+
+  <div class="sidebar">
+    <div class="mobile-navbar" data-navbar>
+
+      <div class="wrapper">
+        <a href="index.html" class="logo">
+          <img src="./assets/images/logo.png" width="179" height="26" alt="Glowing">
+        </a>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="navbar-list">
+
+        
+
+        <li>
+            <a href="index.html" class="navbar-link" data-nav-link>Trang chủ</a>
+        </li>
+
+        <li>
+          <a href="#collection" class="navbar-link" data-nav-link>Bộ sưu tập</a>
+        </li>
+
+        <li>
+          <a href="my_pham.html" class="navbar-link" data-nav-link>Chăm sóc sắc đẹp</a>
+        </li>
+
+        <li>
+          <a href="do_gia_dung.html" class="navbar-link" data-nav-link>Đồ gia dụng</a>
+        </li>
+
+        <li>
+          <a href="thuc_pham.html" class="navbar-link" data-nav-link>Thực phẩm chức năng</a>
+        </li>
+
+        <li>
+          <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="overlay" data-nav-toggler data-overlay></div>
+  </div>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home" aria-label="hero" data-section>
+        <div class="container">
+
+          <ul class="has-scrollbar">
+
+
+            <li class="scrollbar-item">
+              <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-3.jpg')">
+
+                <div class="card-content">
+
+                  <div class="card-content">
+
+                    <h1 class="h1 hero-title">
+                      Liên hệ đặt hàng, tư vấn <br>
+                      qua Zalo hoặc Facebook
+                    </h1>
+  
+                    <p class="hero-text">
+                      0913 206 584 - Bùi Minh Thu
+                    </p>
+  
+                    <p class="price">Giá cả hợp lý, chất lượng đảm bảo, bảo hành toàn quốc</p>
+  
+                    <a href="https://www.facebook.com/profile.php?id=100094244096102" class="btn btn-primary">Liên hệ ngay</a>
+  
+                  </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #COLLECTION
+      -->
+
+      <section class="section collection" id="collection" aria-label="collection" data-section>
+        
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SHOP
+      -->
+         <!-- 
+        - #SHOP 1
+      -->
+
+      <section class="section collection" id="collection" aria-label="collection" data-section>
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Sâm Bắc Mỹ, Canada</h2>   
+
+            <a  class="btn-link">
+              <span class="span">Lướt thêm</span>
+  
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+
+
+            
+
+          </div>
+
+          
+
+          <ul class="has-scrollbar">
+
+          
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 540;">
+                  <img src="./assets/images/thuc_pham/sam_1.jpg" width="540" height="720" loading="lazy"
+                     class="img-cover">
+
+                  <div class="card-actions">
+
+                   
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">280.000₫</span>
+                  </div>
+
+                  <h3>
+                    <a  class="card-title">Thực phẩm bổ sung CND Ginseng nhân sâm & táo đỏ hòa tan</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">69 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+                <div class="shop-card">
+  
+                  <div class="card-banner img-holder" style="--width: 540; --height: 540;">
+                    <img src="./assets/images/thuc_pham/sam_2.jpg" width="540" height="720" loading="lazy"
+                       class="img-cover">
+  
+                    <div class="card-actions">
+  
+                     
+  
+                    </div>
+                  </div>
+  
+                  <div class="card-content">
+  
+                    <div class="price">
+                      <span class="span">600.000₫</span>
+                    </div>
+  
+                    <h3>
+                      <a  class="card-title">Viên nhân sâm CND GINSENG Gold</a>
+                    </h3>
+  
+                    <div class="card-rating">
+  
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+  
+                      <p class="rating-text">130 reviews</p>
+  
+                    </div>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="shop-card">
+  
+                  <div class="card-banner img-holder" style="--width: 540; --height: 540;">
+                    <img src="./assets/images/thuc_pham/sam_3.png" width="540" height="720" loading="lazy"
+                       class="img-cover">
+  
+                    <div class="card-actions">
+  
+                     
+  
+                    </div>
+                  </div>
+  
+                  <div class="card-content">
+  
+                    <div class="price">
+                      <span class="span">210.000₫</span>
+                    </div>
+  
+                    <h3>
+                      <a  class="card-title">Nhân sâm hòa tan CND GINSENG Red Hộp 07 gói
+
+                      </a>
+                    </h3>
+  
+                    <div class="card-rating">
+  
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+  
+                      <p class="rating-text">130 reviews</p>
+  
+                    </div>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="shop-card">
+  
+                  <div class="card-banner img-holder" style="--width: 540; --height: 540;">
+                    <img src="./assets/images/thuc_pham/sam_4.jpg" width="540" height="720" loading="lazy"
+                       class="img-cover">
+  
+                    <div class="card-actions">
+  
+                     
+  
+                    </div>
+                  </div>
+  
+                  <div class="card-content">
+  
+                    <div class="price">
+                      <span class="span">900.000₫</span>
+                    </div>
+  
+                    <h3>
+                      <a  class="card-title">Nhân sâm hòa tan CND GINSENG Red Hộp 30 gói</a>
+                    </h3>
+  
+                    <div class="card-rating">
+  
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+  
+                      <p class="rating-text">130 reviews</p>
+  
+                    </div>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="shop-card">
+  
+                  <div class="card-banner img-holder" style="--width: 540; --height: 540;">
+                    <img src="./assets/images/thuc_pham/bot_sam_1.jpg" width="540" height="720" loading="lazy"
+                       class="img-cover">
+  
+                    <div class="card-actions">
+  
+                     
+  
+                    </div>
+                  </div>
+  
+                  <div class="card-content">
+  
+                    <div class="price">
+                      <span class="span">660.000₫</span>
+                    </div>
+  
+                    <h3>
+                      <a  class="card-title">Set 2 bột nhân sâm CANADA CND GINSENG Gold</a>
+                    </h3>
+  
+                    <div class="card-rating">
+  
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+  
+                      <p class="rating-text">130 reviews</p>
+  
+                    </div>
+  
+                  </div>
+  
+                </div>
+              </li>
+  
+
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+      <!-- 
+        - #SHOP
+      -->
+         <!-- 
+        - #SHOP 2
+      -->
+
+      <section class="section collection" id="collection" aria-label="collection" data-section>
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Sữa VKAIZEN</h2>   
+            
+            <a  class="btn-link">
+              <span class="span">Lướt thêm</span>
+  
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+          
+
+          <ul class="has-scrollbar">
+
+          
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 540;">
+                  <img src="./assets/images/thuc_pham/sua_1.jpg" width="540" height="720" loading="lazy"
+                    class="img-cover">
+
+                  <div class="card-actions">
+
+                   
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">196.000₫</span>
+                  </div>
+
+                  <h3>
+                    <a  class="card-title">Sữa hỗ trợ loãng xương và giúp hồi phục PaPamilk Gold chứa Tổ Yến - Hộp 7 gói (gói 32g)               </a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">69 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+
+            
+            <li class="scrollbar-item">
+                <div class="shop-card">
+  
+                  <div class="card-banner img-holder" style="--width: 540; --height: 540;">
+                    <img src="./assets/images/thuc_pham/sua_5.jpg" width="540" height="720" loading="lazy"
+                      class="img-cover">
+  
+                    <div class="card-actions">
+  
+                     
+  
+                    </div>
+                  </div>
+  
+                  <div class="card-content">
+  
+                    <div class="price">
+                      <span class="span">540.000₫</span>
+                    </div>
+  
+                    <h3>
+                      <a  class="card-title">Sữa hỗ trợ loãng xương và giúp hồi phục PaPamilk Gold chứa Tổ Yến (3 in 1) - Hộp 24 gói (Gói 32gr)          </a>
+                    </h3>
+  
+                    <div class="card-rating">
+  
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+  
+                      <p class="rating-text">69 reviews</p>
+  
+                    </div>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+            <li class="scrollbar-item">
+                <div class="shop-card">
+  
+                  <div class="card-banner img-holder" style="--width: 540; --height: 540;">
+                    <img src="./assets/images/thuc_pham/sua_2.jpg" width="540" height="720" loading="lazy"
+                      class="img-cover">
+  
+                    <div class="card-actions">
+  
+                     
+  
+                    </div>
+                  </div>
+  
+                  <div class="card-content">
+  
+                    <div class="price">
+                      <span class="span">199.000₫</span>
+                    </div>
+  
+                    <h3>
+                      <a  class="card-title">Sữa cho người tiểu đường PaPamilk Diasure chứa Tổ Yến - Hộp 7 gói (gói 32g)          </a>
+                    </h3>
+  
+                    <div class="card-rating">
+  
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+  
+                      <p class="rating-text">69 reviews</p>
+  
+                    </div>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+              
+              <li class="scrollbar-item">
+                <div class="shop-card">
+  
+                  <div class="card-banner img-holder" style="--width: 540; --height: 540;">
+                    <img src="./assets/images/thuc_pham/sua_6.jpg" width="540" height="720" loading="lazy"
+                      class="img-cover">
+  
+                    <div class="card-actions">
+  
+                     
+  
+                    </div>
+                  </div>
+  
+                  <div class="card-content">
+  
+                    <div class="price">
+                      <span class="span">550.000₫</span>
+                    </div>
+  
+                    <h3>
+                      <a  class="card-title">Sữa cho người tiểu đường PaPamilk Diasure chứa Tổ Yến - Hộp 24 gói (Gói 32gr)        </a>
+                    </h3>
+  
+                    <div class="card-rating">
+  
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+  
+                      <p class="rating-text">69 reviews</p>
+  
+                    </div>
+  
+                  </div>
+  
+                </div>
+              </li>
+  
+
+           
+
+             
+              <li class="scrollbar-item">
+                <div class="shop-card">
+  
+                  <div class="card-banner img-holder" style="--width: 540; --height: 540;">
+                    <img src="./assets/images/thuc_pham/sua_3.jpeg" width="540" height="720" loading="lazy"
+                      class="img-cover">
+  
+                    <div class="card-actions">
+  
+                     
+  
+                    </div>
+                  </div>
+  
+                  <div class="card-content">
+  
+                    <div class="price">
+                      <span class="span">275.000₫</span>
+                    </div>
+  
+                    <h3>
+                      <a  class="card-title">Sữa tăng cân và chiều cao cho trẻ PaPamilk Heigth and Gain chứa Tổ Yến - Hộp 14 gói        </a>
+                    </h3>
+  
+                    <div class="card-rating">
+  
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+  
+                      <p class="rating-text">69 reviews</p>
+  
+                    </div>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+              <li class="scrollbar-item">
+                <div class="shop-card">
+  
+                  <div class="card-banner img-holder" style="--width: 540; --height: 540;">
+                    <img src="./assets/images/thuc_pham/sua_4.jpeg" width="540" height="720" loading="lazy"
+                      class="img-cover">
+  
+                    <div class="card-actions">
+  
+                     
+  
+                    </div>
+                  </div>
+  
+                  <div class="card-content">
+  
+                    <div class="price">
+                      <span class="span">465.000₫</span>
+                    </div>
+  
+                    <h3>
+                      <a  class="card-title">Sữa tăng cân và chiều cao cho trẻ PaPamilk Heigth and Gain chứa Tổ Yến - Lon 830gr              </a>
+                    </h3>
+  
+                    <div class="card-rating">
+  
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+  
+                      <p class="rating-text">69 reviews</p>
+  
+                    </div>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+
+
+           
+
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="section collection" id="collection" aria-label="collection" data-section>
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">COMBO</h2>   
+            
+            <a  class="btn-link">
+              <span class="span">Lướt thêm</span>
+  
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+          
+
+          <ul class="has-scrollbar">
+
+          
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 540;">
+                  <img src="./assets/images/do_gia_dung/bo_noi_dia.jpg" width="540" height="720" loading="lazy"
+                    class="img-cover">
+
+                  <div class="card-actions">
+
+                   
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">9.990.000₫</span>
+                  </div>
+
+                  <h3>
+                    <a  class="card-title">CBộ nồi Ý phủ kim cương Diamante                 </a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">69 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+           
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 540;">
+                  <img src="./assets/images/do_gia_dung/bo_noi_thep.jpg" width="540" height="720" loading="lazy"
+                    class="img-cover">
+
+                  <div class="card-actions">
+
+                   
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">8.500.000₫</span>
+                  </div>
+
+                  <h3>
+                    <a  class="card-title">Bộ nồi inox KUCHEN - Set 5 nồi                    </a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">69 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li><li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 540;">
+                  <img src="./assets/images/do_gia_dung/bo_noi_dia3.jpg" width="540" height="720" loading="lazy"
+                    class="img-cover">
+
+                  <div class="card-actions">
+
+                   
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">6.900.000₫</span>
+                  </div>
+
+                  <h3>
+                    <a  class="card-title">Bộ nồi ý phủ kim cương (set 3 nồi)                 </a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">69 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+            
+
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+      <!-- 
+        - COMBO -->
+      
+
+
+
+      <!-- 
+        - #BANNER
+      -->
+
+      <section class="section banner" aria-label="banner" data-section>
+        <div class="container">
+
+          <ul class="banner-list">
+
+            <li>
+              <div class="banner-card banner-card-1 has-before hover:shine">
+
+                <p class="card-subtitle">Bộ sưu tập mới</p>
+
+                <h2 class="h2 card-title">Khám phá sản phẩm chăm sóc da toàn thân của chúng tôi</h2>
+
+                <a href="https://www.facebook.com/profile.php?id=100094244096102" class="btn btn-secondary">Liên hệ để biết thêm chi tiết</a>
+
+                <div class="has-bg-image" style="background-image: url('./assets/images/banner-1.jpg')"></div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="banner-card banner-card-2 has-before hover:shine">
+
+                <h2 class="h2 card-title">Sản phẩm ưu đãi</h2>
+
+                <p class="card-text">
+                  Đặt hàng ngay để nhận được voucher hấp dẫn
+                </p>
+
+                <a href="https://www.facebook.com/profile.php?id=100094244096102" class="btn btn-secondary">Liên hệ ngay</a>
+
+                <div class="has-bg-image" style="background-image: url('./assets/images/bg-mega-menu.jpg')"></div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+       <!-- 
+        - #FEATURE
+      -->
+
+      <section class="section feature" aria-label="feature" data-section>
+        <div class="container">
+
+          <h2 class="h2-large section-title">Vì sao lựa chọn chúng tôi?</h2>
+
+          <ul class="flex-list">
+
+            <li class="flex-item">
+              <div class="feature-card">
+
+                <img src="./assets/images/feature-1.jpg" width="204" height="236" loading="lazy" alt="Guaranteed PURE"
+                  class="card-icon">
+
+                <h3 class="h3 card-title">Sản phẩm tự nhiên</h3>
+
+                <p class="card-text">
+                  Tất cả các công thức đều tuân thủ các tiêu chuẩn nghiêm ngặt về độ tinh khiết và sẽ không bao giờ chứa các thành phần khắc nghiệt hoặc độc hại
+                </p>
+
+              </div>
+            </li>
+
+            <li class="flex-item">
+              <div class="feature-card">
+
+                <img src="./assets/images/feature-2.jpg" width="204" height="236" loading="lazy"
+                  alt="Completely Cruelty-Free" class="card-icon">
+
+                <h3 class="h3 card-title">Giữ niềm tin</h3>
+
+                <p class="card-text">
+                  Chúng tôi luôn sẵn sàng phục phụ khách hàng bằng cả trái tim
+                </p>
+
+              </div>
+            </li>
+
+            <li class="flex-item">
+              <div class="feature-card">
+
+                <img src="./assets/images/feature-3.jpg" width="204" height="236" loading="lazy"
+                  alt="Ingredient Sourcing" class="card-icon">
+
+                <h3 class="h3 card-title">Chất lượng</h3>
+
+                <p class="card-text">
+                  Đảm bảo chất lượng sản phẩm đến tay khách hàng một cách trọn vẹn nhất
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" id="blog" aria-label="blog" data-section>
+        <div class="container">
+
+          <h2 class="h2-large section-title">Khám phá</h2>
+
+          <ul class="flex-list">
+
+            <li class="flex-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder has-before hover:shine" style="--width: 700; --height: 450;">
+                  <img src="./assets/images/blog-1.jpg" width="700" height="450" loading="lazy" alt="Find a Store"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a class="card-title">Sản phẩm được nhập tại các kho hàng uy tín</a>
+                </h3>
+
+
+              </div>
+            </li>
+
+            <li class="flex-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder has-before hover:shine" style="--width: 700; --height: 450;">
+                  <img src="./assets/images/blog-2.jpg" width="700" height="450" loading="lazy" alt="From Our Blog"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a class="card-title">Đội ngũ nhân viên phục vụ chuyên nghiệp, tận tâm</a>
+                </h3>
+
+              
+
+              </div>
+            </li>
+
+            <li class="flex-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder has-before hover:shine" style="--width: 700; --height: 450;">
+                  <img src="./assets/images/blog-3.jpg" width="700" height="450" loading="lazy" alt="Our Story"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a  class="card-title">Mang giá cả thấp nhất cho khách hàng</a>
+                </h3>
+
+               
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" data-section>
+    <div class="container">
+
+      <div class="footer-top">
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">An Bình Store</p>
+          </li>
+
+          <li>
+            <p class="footer-list-text">
+              Địa chỉ: Khu đô thị Nam Trần Hưng Đạo, Phủ Lý, Hà Nam <a href="https://goo.gl/maps/DzXtNVgc9d6i3Tnz5" class="link">Địa chỉ</a>
+            </p>
+          </li>
+
+          <li>
+            <p class="footer-list-text bold">0913 206 584</p>
+          </li>
+
+          <li>
+            <p class="footer-list-text">Bùi Minh Thu</p>
+          </li>
+
+        </ul>
+
+            
+        <div class="wrapper">
+          <p class="copyright">
+            &copy; 2023 codewithLaneol
+          </p>
+
+          <ul class="social-list">
+
+           
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=100094244096102" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=100094244096102" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=100094244096102" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="179" height="26" loading="lazy" alt="Glowing">
+        </a>
+
+        <img src="./assets/images/pay.png" width="313" height="28" alt="available all payment method" class="w-100">
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
